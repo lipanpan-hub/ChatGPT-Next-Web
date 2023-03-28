@@ -3,12 +3,17 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/prism.scss";
 import process from "child_process";
-import { ACCESS_CODES } from "./api/access";
+import { ACCESS_CODES, IS_IN_DOCKER } from "./api/access";
 
-const COMMIT_ID = process
-  .execSync("git rev-parse --short HEAD")
-  .toString()
-  .trim();
+let COMMIT_ID: string | undefined;
+try {
+  COMMIT_ID = process
+    .execSync("git rev-parse --short HEAD")
+    .toString()
+    .trim();
+} catch (e) {
+  console.error("No git or not from git repo.")
+}
 
 export const metadata = {
   title: "ChatGPT Next Web",
@@ -22,8 +27,8 @@ export const metadata = {
 
 function Meta() {
   const metas = {
-    version: COMMIT_ID,
-    access: ACCESS_CODES.size > 0 ? "enabled" : "disabled",
+    version: COMMIT_ID ?? "unknown",
+    access: (ACCESS_CODES.size > 0 || IS_IN_DOCKER) ? "enabled" : "disabled",
   };
 
   return (
