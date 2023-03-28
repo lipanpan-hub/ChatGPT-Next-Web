@@ -95,7 +95,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "先设置好 授权码(lipanpanx) 和 API Key再进行聊天([Key购买地址](https://syno.lipanpanx.com:65473/))\\n更详细的使用教程在我的博客:[lipanpanx.com](https://lipanpanx.com).",
+    BotHello: "先设置好 授权码(lipanpanx) 和 API Key再进行聊天([Key购买地址](https://syno.lipanpanx.com:65473/))  更详细的使用教程在我的博客:[lipanpanx.com](https://lipanpanx.com).",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
