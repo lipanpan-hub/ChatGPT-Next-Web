@@ -1,7 +1,7 @@
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "现在是未授权状态，请在设置页填写授权码和API Key([购买地址](https://syno.lipanpanx.com:65473/))。",
+    Unauthorized: "现在是未授权状态，请在设置页填写授权码(lipanpanx)和API Key([购买地址](https://syno.lipanpanx.com:65473/))。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -95,7 +95,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "先设置好 授权码 和 API Key再进行聊天([Key购买地址](https://syno.lipanpanx.com:65473/)).",
+    BotHello: "先设置好 授权码(lipanpanx) 和 API Key再进行聊天([Key购买地址](https://syno.lipanpanx.com:65473/))\n更详细的试用教程在我的博客:[lipanpanx.com](https://lipanpanx.com).",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
