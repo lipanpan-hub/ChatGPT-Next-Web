@@ -35,6 +35,8 @@ const it: LocaleType = {
     Title: "Tutti i messaggi",
     Copy: "Copia tutto",
     Download: "Scarica",
+    MessageFromYou: "Messaggio da te",
+    MessageFromChatGPT: "Messaggio da ChatGPT",
   },
   Memory: {
     Title: "Prompt di memoria",
@@ -112,6 +114,7 @@ const it: LocaleType = {
       },
       IsChecking: "Controllando...",
       Check: "Controlla ancora",
+      NoAccess: "Inserire la chiave API per controllare il saldo",
     },
     AccessCode: {
       Title: "Codice d'accesso",
