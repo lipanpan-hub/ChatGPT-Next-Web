@@ -78,6 +78,7 @@ const cn = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
+        vi: "Vietnamese",
       },
     },
     Avatar: "头像",
@@ -148,7 +149,7 @@ const cn = {
     },
     AccessCode: {
       Title: "访问密码",
-      SubTitle: "已开启加密访问",
+      SubTitle: "管理员已开启加密访问",
       Placeholder: "请输入访问密码",
     },
     Model: "模型 (model)",
@@ -167,8 +168,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello:
-      "先设置好 授权码(lipanpanx) 和 API Key再进行聊天([Key购买地址](https://syno.lipanpanx.com:65473/))  更详细的使用教程在我的博客:[lipanpanx.com](https://lipanpanx.com).",
+    BotHello: "有什么可以帮你的吗?",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
