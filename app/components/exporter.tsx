@@ -323,10 +323,8 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div className={styles["main-title"]}>ChatGPT Next Web</div>
-            <div className={styles["sub-title"]}>
-              github.com/Yidadaa/ChatGPT-Next-Web
-            </div>
+            <div className={styles["main-title"]}>ChatGPT国内镜像</div>
+            <div className={styles["sub-title"]}>https://gpt.lipanpanx.com</div>
             <div className={styles["icons"]}>
               <Avatar avatar={config.avatar}></Avatar>
               <span className={styles["icon-space"]}>&</span>
