@@ -35,9 +35,8 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
         <script
           async
-          defer
-          data-website-id="1897884c-eddc-4925-baf6-d88a0075b549"
-          src="https://syno.lipanpanx.com:65413/umami.js"
+          src="https://syno.lipanpanx.com:65413/script.js"
+          data-website-id="45df6cb3-731e-4393-bd14-e41ede8c0354"
         ></script>
       </head>
       <body>{children}</body>
