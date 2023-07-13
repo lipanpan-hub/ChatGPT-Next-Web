@@ -2,9 +2,7 @@
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
-import { getBuildConfig } from "./config/build";
-
-const buildConfig = getBuildConfig();
+import { getClientConfig } from "./config/client";
 
 export const metadata = {
   title: "lipanpanx.com",
@@ -32,10 +30,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="version" content={buildConfig.commitId} />
+        <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
-        <script async defer data-website-id="1897884c-eddc-4925-baf6-d88a0075b549" src="https://syno.lipanpanx.com:65413/umami.js"></script>
+        <script
+          async
+          defer
+          data-website-id="1897884c-eddc-4925-baf6-d88a0075b549"
+          src="https://syno.lipanpanx.com:65413/umami.js"
+        ></script>
       </head>
       <body>{children}</body>
     </html>
