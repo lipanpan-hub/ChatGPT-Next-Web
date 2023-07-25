@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      "在[设置](/#/settings)页填入你自己的API Key才能正常使用 [Key购买地址](https://gpt.lipanpanx.com)。",
   },
   Auth: {
     Title: "需要密码",
