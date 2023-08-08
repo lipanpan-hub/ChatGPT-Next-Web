@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "在[设置](/#/settings)页填入你自己的API Key才能正常使用 [Key购买地址](https://lipanpanx.com)。",
+      "在[设置](/#/settings)页填入你自己的API Key才能正常使用 [Key购买地址](https://djk.lipanpanx.com)。",
   },
   Auth: {
     Title: "需要密码",
