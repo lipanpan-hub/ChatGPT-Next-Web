@@ -93,7 +93,7 @@ export class ClientApi {
         {
           from: "human",
           value:
-            " 对话分享自: [ChatGPT 国内镜像]: https://gpt.lipanpanx.com \n\n 更多内容前往我的博客 lipanpanx.com",
+            " 对话分享自 ChatGPT 国内镜像 \n\n https://gpt.lipanpanx.com \n\n 更多内容前往我的博客 lipanpanx.com \n\n 或者加我微信`xx6893xx`获取更多信息",
         },
       ]);
     // 敬告二开开发者们，为了开源大模型的发展，请不要修改上述消息，此消息用于后续数据清洗使用
