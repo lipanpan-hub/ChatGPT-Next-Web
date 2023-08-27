@@ -1,10 +1,14 @@
+import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
+
+const isApp = !!getClientConfig()?.isApp;
 
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-      "在[设置](/#/settings)页填入你自己的API Key才能正常使用 [Key购买地址](https://djk.lipanpanx.com)。",
+    Unauthorized: isApp
+      ? "在[设置](/#/settings)页填入你自己的API Key才能正常使用 [Key购买地址](https://key.dovxvob.com)。"
+      : "在[设置](/#/settings)页填入你自己的API Key才能正常使用 [Key购买地址](https://key.dovxvob.com)。",
   },
   Auth: {
     Title: "需要密码",
@@ -169,6 +173,10 @@ const cn = {
     SendPreviewBubble: {
       Title: "预览气泡",
       SubTitle: "在预览气泡中预览 Markdown 内容",
+    },
+    AutoGenerateTitle: {
+      Title: "自动生成标题",
+      SubTitle: "根据对话内容生成合适的标题",
     },
     Mask: {
       Splash: {
